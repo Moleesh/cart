@@ -1,5 +1,4 @@
 HELP.md
-target
 
 ### STS ###
 .apt_generated
@@ -23,6 +22,7 @@ target
 /nbdist/
 /.nb-gradle/
 /build/
+/target/
 
 ### VS Code ###
 .vscode/
