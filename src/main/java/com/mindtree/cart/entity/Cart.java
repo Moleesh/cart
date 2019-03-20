@@ -1,6 +1,7 @@
 package com.mindtree.cart.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -12,9 +13,14 @@ public class Cart {
     @OneToOne
     private User user;
     @OneToMany
-    private List<Product> products;
+    private List<Product> products = new ArrayList<>();
 
     public Cart() {
+    }
+
+    public Cart(User user) {
+        this.user = user;
+
     }
 
     public Cart(int cartId, User user) {

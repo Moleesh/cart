@@ -1,47 +1,82 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--&lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--<meta charset="utf-8">-->
+<!--<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">-->
 
-    <!-- Bootstrap CSS -->
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet">
-    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet">
+<!--&lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+<!--integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet">-->
+<!--<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"-->
+<!--integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet">-->
 
-    <title>Shopping Cart Application</title>
-</head>
-<body>
-<div class=" container-fluid">
-    <div class="jumbotron">
-        <h1 class="display-4 text-center font-weight-bold"><i class="fas fa-shopping-cart">Shopping Cart Application on
-            Spring Boot with Hibernate</i>
-        </h1>
-    </div>
-    <form method="get" onsubmit="/getUser">
-        <div class="form-group row col-sm-8 mx-auto">
-            <label class="col-sm-2 col-form-label" for="staticEmail">User Name :- </label>
-            <div class="col-sm-9">
-                <input class="form-control"
-                       id="staticEmail"
-                       placeholder="User name to retrieve your previous cart or Create a new one" required type="text">
-            </div>
-            <button class="btn btn-primary mb-1 block" type="submit">Retrieve</button>
-        </div>
-    </form>
-</div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script crossorigin="anonymous"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-</body>
-</html>
+<!--<title>Shopping Cart Application</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class=" container-fluid">-->
+<!--<div class="jumbotron">-->
+<!--<h1 class="display-4 text-center font-weight-bold"><i class="fas fa-shopping-cart"> Shopping Cart Application on-->
+<!--Spring Boot with Hibernate</i>-->
+<!--</h1>-->
+<!--</div>-->
+<!--<form>-->
+<!--<div class="form-group row col-sm-8 mx-auto">-->
+<!--<label class="col-sm-2 col-form-label" for="staticEmail">User Name :- </label>-->
+<!--<div class="col-sm-9">-->
+<!--<input autocomplete="off"-->
+<!--class="form-control"-->
+<!--id="staticEmail" placeholder="User name to retrieve your previous cart or Create a new one"-->
+<!--required-->
+<!--type="text">-->
+<!--</div>-->
+<!--<button class="btn btn-primary mb-1 block" type="submit">Retrieve</button>-->
+<!--</div>-->
+<!--</form>-->
+<!--&lt;!&ndash; Nav tabs &ndash;&gt;-->
+<!--<h3> Hi User</h3>-->
+<!--<div class="row pt-3">-->
+<!--<div class="col-2">-->
+<!--<div aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">-->
+<!--<a aria-selected="true" class="nav-link" data-toggle="pill" href="#addProducts"-->
+<!--role="tab">Add Products</a>-->
+<!--<a aria-selected="false" class="nav-link" data-toggle="pill" href="#manageProducts"-->
+<!--role="tab">Manage Products</a>-->
+<!--<a aria-selected="false" class="nav-link" data-toggle="pill" href="#viewSummary"-->
+<!--role="tab">view Summary</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-10">-->
+<!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+<!--<div class="tab-content">-->
+<!--<div class="tab-pane show active" id="addProducts" role="tabpanel">-->
+<!--<h4>Add Products</h4>-->
+<!--<div class="input-group mb-3">-->
+<!--<div class="input-group-prepend">-->
+<!--<span class="input-group-text" id="basic-addon1">@</span>-->
+<!--</div>-->
+<!--<input aria-describedby="basic-addon1" aria-label="Username" class="form-control"-->
+<!--placeholder="Username"-->
+<!--type="text">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="tab-pane" id="manageProducts" role="tabpanel">Manage Products</div>-->
+<!--<div class="tab-pane" id="viewSummary" role="tabpanel">view Summary</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Optional JavaScript &ndash;&gt;-->
+<!--&lt;!&ndash; jQuery first, then Popper.js, then Bootstrap JS &ndash;&gt;-->
+<!--<script crossorigin="anonymous"-->
+<!--integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+<!--src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+<!--<script crossorigin="anonymous"-->
+<!--integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
+<!--src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>-->
+<!--<script crossorigin="anonymous"-->
+<!--integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"-->
+<!--src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>-->
+
+<!--</body>-->
+<!--</html>-->

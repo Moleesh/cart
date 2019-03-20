@@ -17,6 +17,7 @@ public class User {
 
     public User(String userName) {
         this.userName = userName;
+        cart = new Cart(this);
     }
 
     public User(Cart cart, String userName) {
