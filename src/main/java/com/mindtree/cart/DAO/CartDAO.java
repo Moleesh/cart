@@ -2,6 +2,8 @@ package com.mindtree.cart.dao;
 
 import com.mindtree.cart.entity.Cart;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface CartDAO extends CrudRepository<Cart,Integer> {
+@Repository
+public interface CartDAO extends CrudRepository<Cart, Integer> {
 }
