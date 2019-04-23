@@ -23,6 +23,11 @@ public class Controller {
         return cartService.saveUpdateCart(cart);
     }
 
+    @RequestMapping(value = "/deleteProductFromCart")
+    public User deleteProductFromCart(@RequestParam("user") String userName) {
+        return userService.getUser(userName);
+    }
+
     @RequestMapping(value = "/getUser")
     public User getUser(@RequestParam("user") String userName) {
         return userService.getUser(userName);
