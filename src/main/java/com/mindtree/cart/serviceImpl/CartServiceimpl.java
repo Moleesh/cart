@@ -4,7 +4,9 @@ import com.mindtree.cart.dao.CartDAO;
 import com.mindtree.cart.entity.Cart;
 import com.mindtree.cart.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CartServiceimpl implements CartService {
     @Autowired
     private
