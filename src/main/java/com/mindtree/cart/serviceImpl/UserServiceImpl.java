@@ -1,9 +1,9 @@
 package com.mindtree.cart.serviceImpl;
 
-import com.mindtree.cart.Exception.UserNotFoundException;
 import com.mindtree.cart.dao.UserDAO;
 import com.mindtree.cart.entity.Cart;
 import com.mindtree.cart.entity.User;
+import com.mindtree.cart.exception.UserNotFoundException;
 import com.mindtree.cart.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

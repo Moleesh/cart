@@ -1,4 +1,4 @@
-package com.mindtree.cart.Exception;
+package com.mindtree.cart.exception;
 
 public class UserException extends Exception {
     private static final long serialVersionUID = 6554260167346310865L;

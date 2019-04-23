@@ -1,4 +1,4 @@
-package com.mindtree.cart.Exception;
+package com.mindtree.cart.exception;
 
 public class UserNotFoundException extends Exception {
     private static final long serialVersionUID = -1915856523815549350L;
